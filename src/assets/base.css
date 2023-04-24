@@ -1,0 +1,48 @@
+/* color palette from <https://github.com/vuejs/theme> */
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1, h2, h3 {
+  font-family: "Rubik";
+}
+p, span {
+ font-family: "Roboto";
+}
+
+/* MazPhoneInputNumber css customization */
+.m-phone-number-input__select[data-v-b43ec161] {
+  width: 5rem !important;
+}
+.m-input.--should-up .m-input-label[data-v-c13c1d46] {
+  display: none;
+}
+.m-phone-number-input__country-flag[data-v-b43ec161] {
+  bottom: 50%;
+  left: 10px;
+  transform: translateY(50%);
+}
+.m-phone-number-input:not(.--no-flags) .m-phone-number-input__select[data-v-b43ec161] .m-input-wrapper .m-select-input {
+  position: relative;
+  padding-bottom: 20px;
+  width: 100px;
+  transform: translateX(-15px);
+}
+.m-input.--has-label .m-input-input[data-v-c13c1d46] {
+  padding-bottom: 20px;
+}
