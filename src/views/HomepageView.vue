@@ -2,6 +2,7 @@
   // Components
   import HeroSection from '../components/HeroSection.vue';
   import ProductsSection from '../components/ProductsSection.vue';
+  import BestSellerSection from '../components/BestSellersSection.vue';
 
   // Local files
   import shoe from '../assets/images/hero-slide1.png.webp';
@@ -31,6 +32,7 @@
       </div>
     </section>
     <ProductsSection/>
+    <BestSellerSection/>
   </main>
 </template>
 
