@@ -25,6 +25,9 @@ module.exports = {
         'custom-cyan': '#47C1BF',
         'custom-blue': '#394aea',
         'custom-background': '#f1f6f7',
+      },
+      boxShadow: {
+        'custom-shadow': '0px 0px 7px #c0c0c0'
       }
     },
   },

@@ -33,7 +33,7 @@
       </div>
     </section>
     <ProductsSection/>
-    <BestSellerSection/>
+    <BestSellerSection class="relative"/>
     <SubscribeSection/>
   </main>
 </template>
