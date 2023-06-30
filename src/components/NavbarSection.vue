@@ -18,8 +18,8 @@
     {name: "Blog Details", path: "single-blog.html"},
   ]
   const pagesCategory = [
-    {name: "Login", path: "login.html"},
-    {name: "Register", path: "register.html"},
+    {name: "Login", path: "/login"},
+    {name: "Register", path: "/register"},
     {name: "Tracking", path: "tracking-order.html"},
   ]
   const login = ref(false);
@@ -35,7 +35,7 @@
     <a class="w-32" href="index.html"><img :src="logo" alt="Logo"></a>
     <div class="text-black flex items-center justify-center" id="navbarSupportedContent">
       <ul class="flex items-start justify-between w-full gap-x-10">
-        <li class="hover:text-custom-blue"><a class="" href="index.html">Home</a></li>
+        <li class="hover:text-custom-blue"><RouterLink class="" to="/">Home</RouterLink></li>
         <li class="" @mouseenter="showShopCategory = true" @mouseleave="showShopCategory = false">
           <a href="#" class="hover:text-custom-blue">Shop</a>
           <ul v-if="showShopCategory" class="absolute z-10 left-0 w-250 top-7 bg-white">
@@ -51,7 +51,9 @@
         <li class="" @mouseenter="showPagesCategory = true" @mouseleave="showPagesCategory = false">
           <a href="#" class="hover:text-custom-blue">Pages</a>
           <ul class="absolute z-10 left-0 w-250 top-7 bg-white" v-if="showPagesCategory">
-            <li v-for="page in pagesCategory" class="px-4 py-4 hover:bg-custom-blue hover:text-white transition-all duration-300"><a class="" :href="page.path">{{ page.name }}</a></li>
+            <li v-for="page in pagesCategory" class="px-4 py-4 hover:bg-custom-blue hover:text-white transition-all duration-300">
+              <RouterLink :to="page.path">{{ page.name }}</RouterLink>
+            </li>
           </ul>
         </li>
         <li class="hover:text-custom-blue"><a class="" href="contact.html">Contact</a></li>
